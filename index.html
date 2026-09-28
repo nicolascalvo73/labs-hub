@@ -9,26 +9,92 @@
   <style>
     :root { color-scheme: light dark; }
     * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1.5rem; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #0f1117; color: #eef1f6; }
-    main { max-width: 34rem; width: 100%; }
-    h1 { font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2rem); margin: 0 0 0.5rem; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #eef1f6;
+      padding: 1.5rem;
+    }
+    main { max-width: 56rem; margin-inline: auto; }
+
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 2.75rem;
+      padding: 0 1.1rem;
+      border: 1px solid #2b3140;
+      border-radius: 999px;
+      color: #eef1f6;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+    .back:hover { border-color: #4c6fff; background: #171a23; }
+    .back svg { flex-shrink: 0; }
+
+    h1 { font-size: clamp(1.5rem, 1.1rem + 1.5vw, 2rem); margin: 0; }
     p.lead { color: #a3acbd; margin: 0 0 2rem; }
-    ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
-    a.proposal { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 1.25rem; border: 1px solid #262b38; border-radius: 12px; background: #171a23; color: inherit; text-decoration: none; transition: border-color 0.15s ease, background-color 0.15s ease; }
-    a.proposal:hover { border-color: #4c6fff; background: #1b1f2b; }
-    a.proposal span.arrow { color: #4c6fff; }
+
+    ul.cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; grid-template-columns: 1fr; }
+    @media (min-width: 40rem) { ul.cards { grid-template-columns: 1fr 1fr; } }
+
+    a.card {
+      display: block;
+      border: 1px solid #262b38;
+      border-radius: 16px;
+      background: #171a23;
+      color: inherit;
+      text-decoration: none;
+      overflow: hidden;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    a.card:hover { border-color: #4c6fff; transform: translateY(-2px); }
+    .card__thumb { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top; background: #0b0d12; }
+    .card__body { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.25rem; }
+    .card__name { font-weight: 700; }
+    .card__arrow { color: #4c6fff; flex-shrink: 0; }
+
     footer { margin-top: 2.5rem; font-size: 0.8125rem; color: #6b7688; }
     footer a { color: inherit; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Labs de Mondi Studio</h1>
+    <div class="top">
+      <h1>Labs de Mondi Studio</h1>
+      <a class="back" href="https://www.mondistudio.com.ar/">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver a Mondi Studio
+      </a>
+    </div>
+
     <p class="lead">Propuestas de rediseño web en desarrollo. Cada una vive en su propio repositorio.</p>
-    <ul>
-      <li><a class="proposal" href="/quimica-dalton/"><span>Química Dalton</span><span class="arrow">→</span></a></li>
+
+    <ul class="cards">
+      <li>
+        <a class="card" href="/quimica-dalton/">
+          <img class="card__thumb" src="/assets/thumbs/quimica-dalton.webp" alt="Vista previa de la landing de Química Dalton" width="640" height="400" loading="lazy" />
+          <div class="card__body">
+            <span class="card__name">Química Dalton</span>
+            <span class="card__arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+      </li>
     </ul>
-    <footer>Este dominio reenvía cada ruta a su sitio en GitHub Pages. <a href="https://mondistudio.com.ar">mondistudio.com.ar</a></footer>
+
+    <footer>Este dominio reenvía cada ruta a su sitio en GitHub Pages. <a href="https://www.mondistudio.com.ar/">mondistudio.com.ar</a></footer>
   </main>
 </body>
 </html>
