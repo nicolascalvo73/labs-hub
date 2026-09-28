@@ -1,6 +1,7 @@
 {
   "rewrites": [
     { "source": "/quimica-dalton", "destination": "https://nicolascalvo73.github.io/quimica-dalton/" },
+    { "source": "/quimica-dalton/", "destination": "https://nicolascalvo73.github.io/quimica-dalton/" },
     { "source": "/quimica-dalton/:path*", "destination": "https://nicolascalvo73.github.io/quimica-dalton/:path*" }
   ]
 }
