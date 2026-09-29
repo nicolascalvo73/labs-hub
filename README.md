@@ -15,6 +15,9 @@ deploy en GitHub Pages, como pide la skill `mondi-proposal`— convivan bajo
 2. Agregar el link en `index.html`.
 3. Push a `main`: Vercel redeploya solo (proyecto conectado por Git).
 
+### Propuestas alojadas en otro proyecto de Vercel (no en GitHub Pages)
+`retiro-yoga-swami` vive en un proyecto de Vercel propio (`retiro-yoga-swami-lab`). Sus dos primeras reglas apuntan **sin barra final**: ese proyecto usa `trailingSlash: false`, y con barra final Vercel redirigiría hacia `vercel.app` y el visitante saldría de este dominio. Ver `docs/LAB.md` en el repo de esa propuesta.
+
 ## Deploy
 Importado en Vercel desde este repo de GitHub (sin build step: sitio
 estático). El dominio `labs.mondistudio.com.ar` se asigna desde

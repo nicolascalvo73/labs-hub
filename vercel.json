@@ -2,6 +2,9 @@
   "rewrites": [
     { "source": "/quimica-dalton", "destination": "https://nicolascalvo73.github.io/quimica-dalton/" },
     { "source": "/quimica-dalton/", "destination": "https://nicolascalvo73.github.io/quimica-dalton/" },
-    { "source": "/quimica-dalton/:path*", "destination": "https://nicolascalvo73.github.io/quimica-dalton/:path*" }
+    { "source": "/quimica-dalton/:path*", "destination": "https://nicolascalvo73.github.io/quimica-dalton/:path*" },
+    { "source": "/retiro-yoga-swami", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami" },
+    { "source": "/retiro-yoga-swami/", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami" },
+    { "source": "/retiro-yoga-swami/:path*", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami/:path*" }
   ]
 }
