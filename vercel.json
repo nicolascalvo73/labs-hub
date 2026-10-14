@@ -3,6 +3,9 @@
     { "source": "/quimica-dalton", "destination": "https://nicolascalvo73.github.io/quimica-dalton/" },
     { "source": "/quimica-dalton/", "destination": "https://nicolascalvo73.github.io/quimica-dalton/" },
     { "source": "/quimica-dalton/:path*", "destination": "https://nicolascalvo73.github.io/quimica-dalton/:path*" },
+    { "source": "/ransser", "destination": "https://nicolascalvo73.github.io/ransser/" },
+    { "source": "/ransser/", "destination": "https://nicolascalvo73.github.io/ransser/" },
+    { "source": "/ransser/:path*", "destination": "https://nicolascalvo73.github.io/ransser/:path*" },
     { "source": "/retiro-yoga-swami", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami" },
     { "source": "/retiro-yoga-swami/", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami" },
     { "source": "/retiro-yoga-swami/:path*", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami/:path*" }
