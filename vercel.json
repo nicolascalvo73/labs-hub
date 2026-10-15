@@ -6,6 +6,9 @@
     { "source": "/ransser", "destination": "https://nicolascalvo73.github.io/ransser/" },
     { "source": "/ransser/", "destination": "https://nicolascalvo73.github.io/ransser/" },
     { "source": "/ransser/:path*", "destination": "https://nicolascalvo73.github.io/ransser/:path*" },
+    { "source": "/mg-customs", "destination": "https://mg-customs-lab.vercel.app/mg-customs" },
+    { "source": "/mg-customs/", "destination": "https://mg-customs-lab.vercel.app/mg-customs" },
+    { "source": "/mg-customs/:path*", "destination": "https://mg-customs-lab.vercel.app/mg-customs/:path*" },
     { "source": "/retiro-yoga-swami", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami" },
     { "source": "/retiro-yoga-swami/", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami" },
     { "source": "/retiro-yoga-swami/:path*", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami/:path*" }
