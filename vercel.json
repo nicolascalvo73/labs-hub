@@ -31,6 +31,9 @@
     { "source": "/retiro-yoga-swami/:path*", "destination": "https://retiro-yoga-swami-lab.vercel.app/retiro-yoga-swami/:path*" },
     { "source": "/mondistudio-v1", "destination": "https://mondistudio-v1-lab.vercel.app/mondistudio-v1/" },
     { "source": "/mondistudio-v1/", "destination": "https://mondistudio-v1-lab.vercel.app/mondistudio-v1/" },
-    { "source": "/mondistudio-v1/:path*", "destination": "https://mondistudio-v1-lab.vercel.app/mondistudio-v1/:path*" }
+    { "source": "/mondistudio-v1/:path*", "destination": "https://mondistudio-v1-lab.vercel.app/mondistudio-v1/:path*" },
+    { "source": "/vrtour", "destination": "https://vrtour-lab.vercel.app/vrtour/" },
+    { "source": "/vrtour/", "destination": "https://vrtour-lab.vercel.app/vrtour/" },
+    { "source": "/vrtour/:path*", "destination": "https://vrtour-lab.vercel.app/vrtour/:path*" }
   ]
 }
